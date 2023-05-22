@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Título de su sitio web</title>
+  </head>
+  <body>
+    <div id="div-a">
+        <img src="img/a.png" alt="">
+    </div>
+    <section id="sec-textbuttons">
+        <textarea id="texto" name="texto" placeholder="Ingresa tu texto aquí"></textarea>
+        <div id="div-pb">
+            <div id="div-ip">
+                <img src="img/Vector.png" alt="">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div id="div-buttons">
+                <button id="button-encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="button-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </section>
+    <section id="section-result">
+        <div id="div-nontext">
+            <div id="div-chica">
+                <img src="img/chica.png" alt="">
+            </div>
+            <p id="nomsg">Ningún mensaje
+                fue encontrado</p>
+                <br>
+            <p class="nomsg">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div id="div-result">
+            <p id="p-result"></p>
+            <button id="button-copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

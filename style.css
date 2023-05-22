@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5E5E5;
+    color: #333;
+    display: flex;
+}
+
+#div-a {
+    position: absolute;
+    top: -140px;
+    left: -85px;
+    transform: scale(0.12);
+}
+
+/* Estilos para la sección de texto y botones */
+#sec-textbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 90vh;
+    width: 60%;
+    margin: 20px 10px 20px 100px;
+}
+
+#texto {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    flex: 1;
+    padding: 40px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: transparent;
+    resize: none;
+    border-radius: 4px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#div-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+#div-info {
+    display: flex;
+    position: absolute;
+    top: 480px;
+}
+
+#div-ip {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin-left: 45px;
+}
+
+#div-ip p {
+    margin-left: 10px;
+}
+
+#button-encriptar {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border: 1px solid #d7d8d8;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#button-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#button-desencriptar:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+#button-encriptar:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} 
+
+#section-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-right:  50px;;
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#section-result p:nth-of-type(1) {
+    width: 336px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+#section-result p:nth-of-type(2) {
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#div-nontext {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#div-chica {
+    transform: scale(0.7);
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+#section-result button:hover {
+    background-color: #00243c;
+}
+
+#div-result {
+    height: 100%;
+    padding: 35px 0 15px 0;
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section-result p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#button-copiar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+#p-result {
+    word-wrap: break-word;
+    width: 100%;
+    text-align: left;
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        margin-left: 1%;
+    }
+    #div-a {
+        transform: scale(0.15);
+    }
+    body {
+        flex-direction: column;
+        
+    }
+    #sec-textbuttons {
+        width: 90vw;
+        margin-left: 8%;
+        height: 1000px;
+    }
+    #texto {
+        margin: auto;
+        margin-top: 70px;
+        width: 100%;
+    }
+    #div-pb {
+        transform: scale(1.1);
+        width: 100%;
+        margin-left: -5%;
+    }
+    #div-ip p {
+        font-size: 19px;
+    }
+    #button-encriptar, #button-desencriptar {
+        font-size: 18px;
+    }
+    #div-chica {
+        display: none;
+    }
+    #section-result {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        padding: 10px 0 10px 0;
+    }
+    #section-result br {
+        display: none;
+    }
+    #div-nontext {
+        width: 100%;
+    }
+    .nomsg {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    #div-result {
+        padding: 10px 0 15px 0;
+    }
+    #p-result {
+        margin-bottom: 25px;
+    }
+    #button-copiar {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #sec-textbuttons {
+        height: 730px;
+    }
+    #texto {
+        padding: 15px 0 0 0;
+    }
+    #div-buttons {
+        padding-left: 0;
+        flex-direction: column;
+    }
+    #div-buttons button {
+        width: 100%;
+    }
+    #div-pb {
+        transform: scale(1);
+        width: 100%;
+        margin-left: -4%;
+    }
+    #div-ip {
+        margin-left: 1%;
+    }
+    .nomsg {
+        width: 70%;
+    }
+}
